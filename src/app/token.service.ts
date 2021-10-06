@@ -1,4 +1,8 @@
+
 import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import {Observable} from "rxjs";
+
 const ACCESS_TOKEN = 'access_token';
 const REFRESH_TOKEN = ' refresh_token';
 
@@ -6,7 +10,12 @@ const REFRESH_TOKEN = ' refresh_token';
   providedIn:'root'
 })
 export class TokenService{
-  constructor() {
+
+  constructor(private http: HttpClient) {
+   // getData(): Observable<any> {
+   //    const URL = "https://jsonplaceholder.typicode.com/todos/"
+   //    return this.http.get<any>(URL)
+   //  }
   }
   // getToken():string {
   //   return localStorage.getItem(ACCESS_TOKEN);
