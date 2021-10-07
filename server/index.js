@@ -1,5 +1,5 @@
 
-// require('dotenv').config();
+ require('dotenv').config();
 const path = require('path');
 import express from 'express';
 let angular_cli_client_url = "http://localhost:4200";

@@ -2,22 +2,14 @@
   {{ title }}
 </p>
 
-<!--<button (click)="signIn('Github'):"> Sign In with GitHub</button>-->
-<!--<br><br>-->
-<!--<button (click) ="signOut():">Sign Out</button>-->
 
-<!--<br><br>-->
-<!--<div *ngIf="user">-->
-<!--  <img src="{{user.photoUrl}}">-->
-<!--  <h4>{{user.name}}</h4>-->
-<!--  <p>{{user.email}}</p>-->
 <div >
-  <img src="../src/assets/github-logo-png-transparent-png.png" alt="">
+  <img src="assets/github-logo-png-transparent-png.png" alt="" style="height: 70px ; width:70px">
 </div>
 <div (click)="loginGithub()">
 <button>Login With Github</button>
-  <ul *ngFor="let item of lis">
-    <li> {{ item }} </li>
-
+  <ul *ngFor="let item of list">
+    <li> {{ item.id }} </li>
+    <li> {{ item.title }} </li>
   </ul>
 </div>
